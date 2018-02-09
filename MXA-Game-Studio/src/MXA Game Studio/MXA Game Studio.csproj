@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4C3627D-751F-4517-96C1-1D661F2E75A5}</ProjectGuid>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InsmaSoftware.MXA_Game_Studio</RootNamespace>
+    <AssemblyName>MXA Game Studio</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.9.0" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.10.0" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.11.0">
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.12.0">
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop" />
+    <Reference Include="Microsoft.VisualStudio.Shell.12.0" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.10.0" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.11.0" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.12.0" />
+    <Reference Include="Microsoft.VisualStudio.VSHelp, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="EnvDTE">
+      <Guid>{80CC9F66-E7D8-4DDD-85B6-D9E6CD0E93E2}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="EnvDTE100">
+      <Guid>{26AD1324-4B7C-44BC-84F8-B86AED45729F}</Guid>
+      <VersionMajor>10</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="EnvDTE80">
+      <Guid>{1A31287A-4D7D-413E-8E32-3B374931BD89}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="EnvDTE90">
+      <Guid>{2CE2370E-D744-4936-A090-3FFFE667B0E1}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.VisualStudio.CommandBars">
+      <Guid>{1CBA492E-7263-47BB-87FE-639000619B15}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Guids.cs" />
+    <Compile Include="ProjectFlavor\CustomPropertyPage.cs" />
+    <Compile Include="ProjectFlavor\CustomPropertyPageProjectFactory.cs" />
+    <Compile Include="ProjectFlavor\CustomPropertyPageProjectFlavor.cs" />
+    <Compile Include="ProjectFlavor\CustomPropertyPageProjectFlavorCfg.cs" />
+    <Compile Include="ProjectFlavor\CustomPropertyPagePropertyStore.cs" />
+    <Compile Include="ProjectFlavor\CustomPropertyPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProjectFlavor\CustomPropertyPageView.designer.cs">
+      <DependentUpon>CustomPropertyPageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPageBase\Constants.cs" />
+    <Compile Include="PropertyPageBase\IPageView.cs" />
+    <Compile Include="PropertyPageBase\IPageViewSite.cs" />
+    <Compile Include="PropertyPageBase\IPropertyPageUI.cs" />
+    <Compile Include="PropertyPageBase\IPropertyStore.cs" />
+    <Compile Include="PropertyPageBase\PageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPageBase\PropertyControlMap.cs" />
+    <Compile Include="PropertyPageBase\PropertyControlTable.cs" />
+    <Compile Include="PropertyPageBase\PropertyPage.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="MXAGameStudioPackage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProjectFlavor\CustomPropertyPageView.resx">
+      <DependentUpon>CustomPropertyPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VSPackage.resx">
+      <MergeWithCTO>true</MergeWithCTO>
+      <ManifestResourceName>VSPackage</ManifestResourceName>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source.extension.vsixmanifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Package.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ItemTemplates\Content Importer v5.0-cs\Content Importer v5.0-cs.csproj">
+      <Project>{78B69A51-B13B-4475-A189-86973A016B49}</Project>
+      <Name>Content Importer v5.0-cs</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\Content Importer v5.0-vb\Content Importer v5.0-vb.vbproj">
+      <Project>{516ABFAC-9990-476E-9033-65F6B24695F3}</Project>
+      <Name>Content Importer v5.0-vb</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\Content Processor v5.0-cs\Content Processor v5.0-cs.csproj">
+      <Project>{0A2E894D-52A1-4AE6-810E-F887695516E3}</Project>
+      <Name>Content Processor v5.0-cs</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\Content Processor v5.0-vb\Content Processor v5.0-vb.vbproj">
+      <Project>{4FC084C9-017B-4B81-B9BF-191332C004A8}</Project>
+      <Name>Content Processor v5.0-vb</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\Content Type Reader v5.0-cs\Content Type Reader v5.0-cs.csproj">
+      <Project>{CB5025C2-D6DA-4754-B90F-12486899AB18}</Project>
+      <Name>Content Type Reader v5.0-cs</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\Content Type Reader v5.0-vb\Content Type Reader v5.0-vb.vbproj">
+      <Project>{88EAA945-A6AF-40B4-9DCD-CB2657F294D7}</Project>
+      <Name>Content Type Reader v5.0-vb</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\Content Type Writer v5.0-cs\Content Type Writer v5.0-cs.csproj">
+      <Project>{2801E507-91D7-4233-9B92-EFD33713F6AD}</Project>
+      <Name>Content Type Writer v5.0-cs</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\Content Type Writer v5.0-vb\Content Type Writer v5.0-vb.vbproj">
+      <Project>{96B21E3F-E596-4189-ABE0-EC4569265E55}</Project>
+      <Name>Content Type Writer v5.0-vb</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\Effect File v5.0-cs\Effect File v5.0-cs.csproj">
+      <Project>{A364ABE5-6295-490E-A951-76F2FAC913D2}</Project>
+      <Name>Effect File v5.0-cs</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\Effect File v5.0-vb\Effect File v5.0-vb.vbproj">
+      <Project>{81C97208-A11A-4A45-8053-DBB43813F25B}</Project>
+      <Name>Effect File v5.0-vb</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\Game Component v5.0-cs\Game Component v5.0-cs.csproj">
+      <Project>{44D05CC3-E696-477A-8818-1D77E7DC24AC}</Project>
+      <Name>Game Component v5.0-cs</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\Game Component v5.0-vb\Game Component v5.0-vb.vbproj">
+      <Project>{52AC0CCE-7B58-49AF-AD3D-FD6654C30353}</Project>
+      <Name>Game Component v5.0-vb</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\Sprite Font v5.0-cs\Sprite Font v5.0-cs.csproj">
+      <Project>{815AD2F2-1186-4D73-B1F5-0B5569813996}</Project>
+      <Name>Sprite Font v5.0-cs</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\Sprite Font v5.0-vb\Sprite Font v5.0-vb.vbproj">
+      <Project>{2B5069B6-007B-4838-84E9-109CF9B28B39}</Project>
+      <Name>Sprite Font v5.0-vb</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Content Pipeline Extension Library v5.0-cs\Content Pipeline Extension Library v5.0-cs.csproj">
+      <Project>{1DE9F16A-FC1A-4F2C-BBF2-99144D0D69C8}</Project>
+      <Name>Content Pipeline Extension Library v5.0-cs</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Content Pipeline Extension Library v5.0-vb\Content Pipeline Extension Library v5.0-vb.vbproj">
+      <Project>{96AC5F27-F361-42E3-AADC-8A1A4BBA2575}</Project>
+      <Name>Content Pipeline Extension Library v5.0-vb</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Empty Content Pipeline v5.0-cs\Empty Content Pipeline v5.0-cs.csproj">
+      <Project>{31937D9F-C6E5-43EE-951A-D34E629F7169}</Project>
+      <Name>Empty Content Pipeline v5.0-cs</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Empty Content Pipeline v5.0-vb\Empty Content Pipeline v5.0-vb.vbproj">
+      <Project>{F9F3026A-8B54-4F6C-B091-BEA290C4AE57}</Project>
+      <Name>Empty Content Pipeline v5.0-vb</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Windows Game Library v5.0-cs\Windows Game Library v5.0-cs.csproj">
+      <Project>{FF3BFDBF-80F8-43FD-A23E-CB2CFC7610E2}</Project>
+      <Name>Windows Game Library v5.0-cs</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Windows Game Library v5.0-vb\Windows Game Library v5.0-vb.vbproj">
+      <Project>{E2A07A1B-109B-4483-8480-DD305961F63B}</Project>
+      <Name>Windows Game Library v5.0-vb</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Windows Game v5.0-cs\Windows Game v5.0-cs.csproj">
+      <Project>{B28C395C-7BC1-4E9E-B2B5-EEB78558F8A5}</Project>
+      <Name>Windows Game v5.0-cs</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Windows Game v5.0-vb\Windows Game v5.0-vb.vbproj">
+      <Project>{6A3DDFE3-287A-49BF-9837-47FF771DB49A}</Project>
+      <Name>Windows Game v5.0-vb</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Windows Phone Game Library v5.0-cs\Windows Phone Game Library v5.0-cs.csproj">
+      <Project>{3F42E0C0-A58B-43ED-859C-621661E9F05B}</Project>
+      <Name>Windows Phone Game Library v5.0-cs</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Windows Phone Game Library v5.0-vb\Windows Phone Game Library v5.0-vb.vbproj">
+      <Project>{CD4CC40D-5729-4AE8-AA31-32F734AF57B3}</Project>
+      <Name>Windows Phone Game Library v5.0-vb</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Windows Phone Game v5.0-cs\Windows Phone Game v5.0-cs.csproj">
+      <Project>{B5AF6782-F3AC-4128-AF79-8048936F3B6D}</Project>
+      <Name>Windows Phone Game v5.0-cs</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Windows Phone Game v5.0-vb\Windows Phone Game v5.0-vb.vbproj">
+      <Project>{4BBDBE46-2AAA-474C-BCF3-6202601D0DED}</Project>
+      <Name>Windows Phone Game v5.0-vb</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Xbox Game Library v5.0-cs\Xbox Game Library v5.0-cs.csproj">
+      <Project>{A16C8CE8-FA7F-4309-87C6-5033FAC9D1E5}</Project>
+      <Name>Xbox Game Library v5.0-cs</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Xbox Game Library v5.0-vb\Xbox Game Library v5.0-vb.vbproj">
+      <Project>{8B0E22AD-4F77-4037-9BC6-0B0609C601DA}</Project>
+      <Name>Xbox Game Library v5.0-vb</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Xbox Game v5.0-cs\Xbox Game v5.0-cs.csproj">
+      <Project>{D5554B57-D892-48C2-9952-71D83896EE57}</Project>
+      <Name>Xbox Game v5.0-cs</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\Xbox Game v5.0-vb\Xbox Game v5.0-vb.vbproj">
+      <Project>{A7678248-6998-47A5-8607-BC59CD37FCD2}</Project>
+      <Name>Xbox Game v5.0-vb</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <UseCodebase>true</UseCodebase>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

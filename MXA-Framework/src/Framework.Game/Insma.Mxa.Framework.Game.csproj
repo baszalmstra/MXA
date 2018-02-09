@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0847443D-55EB-440D-B6FF-D5D005312D6C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Insma.Mxa.Framework</RootNamespace>
+    <AssemblyName>Insma.Mxa.Framework.Game</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <ProjectReference Include="..\Framework.GamerServices\Insma.Mxa.Framework.GamerServices.csproj">
+      <Project>{ccde9ed0-7cca-4d77-bd31-1873113cb953}</Project>
+      <Name>Insma.Mxa.Framework.GamerServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.Graphics\Insma.Mxa.Framework.Graphics.csproj">
+      <Project>{9bdfac16-cdb6-40df-bf55-add0f305a0d7}</Project>
+      <Name>Insma.Mxa.Framework.Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Insma.Mxa.Framework.csproj">
+      <Project>{ed6c838f-b040-4f7b-812a-9448d07340e5}</Project>
+      <Name>Insma.Mxa.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DrawableGameComponent.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="GameComponent.cs" />
+    <Compile Include="GameComponentCollection.cs" />
+    <Compile Include="GameComponentCollectionEventArgs.cs" />
+    <Compile Include="GamerServices\GamerServicesComponent.cs" />
+    <Compile Include="GameServiceContainer.cs" />
+    <Compile Include="GameTime.cs" />
+    <Compile Include="GameWindow.cs" />
+    <Compile Include="GraphicsDeviceInformation.cs" />
+    <Compile Include="GraphicsDeviceManager.cs" />
+    <Compile Include="IDrawable.cs" />
+    <Compile Include="IGameComponent.cs" />
+    <Compile Include="IGraphicsDeviceManager.cs" />
+    <Compile Include="IUpdateable.cs" />
+    <Compile Include="LaunchParameters.cs" />
+    <Compile Include="PreparingDeviceSettingsEventArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

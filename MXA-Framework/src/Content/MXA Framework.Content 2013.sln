@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Content.Pipeline.AudioImporters", "Pipeline.AudioImporters\Insma.Mxa.Framework.Content.Pipeline.AudioImporters.csproj", "{F48C9BB9-6BE9-49D2-AA76-88082C405A01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Content.Pipeline.EffectImporter", "Pipeline.EffectImporter\Insma.Mxa.Framework.Content.Pipeline.EffectImporter.csproj", "{28F921D3-8C02-4EE5-A150-860CB8809C9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Content.Pipeline.FBXImporter", "Pipeline.FBXImporter\Insma.Mxa.Framework.Content.Pipeline.FBXImporter.csproj", "{E047B589-6C0A-4F85-92DE-27BEE2441F8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Content.Pipeline.TextureImporter", "Pipeline.TextureImporter\Insma.Mxa.Framework.Content.Pipeline.TextureImporter.csproj", "{BD3D3F73-DA89-4712-A1AE-1BF8CE6C030C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Content.Pipeline.VideoImporters", "Pipeline.VideoImporters\Insma.Mxa.Framework.Content.Pipeline.VideoImporters.csproj", "{2C0257C0-EADC-4BB6-BC6B-53BEBF7AC482}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Content.Pipeline.XImporter", "Pipeline.XImporter\Insma.Mxa.Framework.Content.Pipeline.XImporter.csproj", "{EEE159F9-1F9E-4628-A19D-6662EC72D789}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F48C9BB9-6BE9-49D2-AA76-88082C405A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48C9BB9-6BE9-49D2-AA76-88082C405A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48C9BB9-6BE9-49D2-AA76-88082C405A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48C9BB9-6BE9-49D2-AA76-88082C405A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F921D3-8C02-4EE5-A150-860CB8809C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F921D3-8C02-4EE5-A150-860CB8809C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F921D3-8C02-4EE5-A150-860CB8809C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F921D3-8C02-4EE5-A150-860CB8809C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E047B589-6C0A-4F85-92DE-27BEE2441F8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E047B589-6C0A-4F85-92DE-27BEE2441F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E047B589-6C0A-4F85-92DE-27BEE2441F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E047B589-6C0A-4F85-92DE-27BEE2441F8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD3D3F73-DA89-4712-A1AE-1BF8CE6C030C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3D3F73-DA89-4712-A1AE-1BF8CE6C030C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3D3F73-DA89-4712-A1AE-1BF8CE6C030C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3D3F73-DA89-4712-A1AE-1BF8CE6C030C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0257C0-EADC-4BB6-BC6B-53BEBF7AC482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0257C0-EADC-4BB6-BC6B-53BEBF7AC482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0257C0-EADC-4BB6-BC6B-53BEBF7AC482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0257C0-EADC-4BB6-BC6B-53BEBF7AC482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE159F9-1F9E-4628-A19D-6662EC72D789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE159F9-1F9E-4628-A19D-6662EC72D789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE159F9-1F9E-4628-A19D-6662EC72D789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE159F9-1F9E-4628-A19D-6662EC72D789}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

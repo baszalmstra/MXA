@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework", "Framework\Insma.Mxa.Framework.csproj", "{ED6C838F-B040-4F7B-812A-9448D07340E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Audio", "Framework.Audio\Insma.Mxa.Framework.Audio.csproj", "{1AE9F386-0B93-4CFD-B44B-4A884F41B7F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Avatar", "Framework.Avatar\Insma.Mxa.Framework.Avatar.csproj", "{F68FB7F7-3DD5-43FD-93DE-4C402DF0E4B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Game", "Framework.Game\Insma.Mxa.Framework.Game.csproj", "{0847443D-55EB-440D-B6FF-D5D005312D6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.GamerServices", "Framework.GamerServices\Insma.Mxa.Framework.GamerServices.csproj", "{CCDE9ED0-7CCA-4D77-BD31-1873113CB953}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Graphics", "Framework.Graphics\Insma.Mxa.Framework.Graphics.csproj", "{9BDFAC16-CDB6-40DF-BF55-ADD0F305A0D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Input.Touch", "Framework.Input.Touch\Insma.Mxa.Framework.Input.Touch.csproj", "{ACD367E7-D3DB-4E9C-93D4-E815A8955137}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Net", "Framework.Net\Insma.Mxa.Framework.Net.csproj", "{753BE409-7268-48F1-BB45-D568EF1E5E1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Storage", "Framework.Storage\Insma.Mxa.Framework.Storage.csproj", "{6FF88A1F-E638-4EDA-9BAC-E8A4A44A373B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Video", "Framework.Video\Insma.Mxa.Framework.Video.csproj", "{92912C38-0B74-4F4A-A54A-94DC70E7CB3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insma.Mxa.Framework.Xact", "Framework.Xact\Insma.Mxa.Framework.Xact.csproj", "{6D767C87-21D2-40A3-BF83-BB58A62D8FC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED6C838F-B040-4F7B-812A-9448D07340E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED6C838F-B040-4F7B-812A-9448D07340E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED6C838F-B040-4F7B-812A-9448D07340E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED6C838F-B040-4F7B-812A-9448D07340E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AE9F386-0B93-4CFD-B44B-4A884F41B7F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AE9F386-0B93-4CFD-B44B-4A884F41B7F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AE9F386-0B93-4CFD-B44B-4A884F41B7F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AE9F386-0B93-4CFD-B44B-4A884F41B7F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F68FB7F7-3DD5-43FD-93DE-4C402DF0E4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F68FB7F7-3DD5-43FD-93DE-4C402DF0E4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F68FB7F7-3DD5-43FD-93DE-4C402DF0E4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F68FB7F7-3DD5-43FD-93DE-4C402DF0E4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0847443D-55EB-440D-B6FF-D5D005312D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0847443D-55EB-440D-B6FF-D5D005312D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0847443D-55EB-440D-B6FF-D5D005312D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0847443D-55EB-440D-B6FF-D5D005312D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCDE9ED0-7CCA-4D77-BD31-1873113CB953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCDE9ED0-7CCA-4D77-BD31-1873113CB953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCDE9ED0-7CCA-4D77-BD31-1873113CB953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCDE9ED0-7CCA-4D77-BD31-1873113CB953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BDFAC16-CDB6-40DF-BF55-ADD0F305A0D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BDFAC16-CDB6-40DF-BF55-ADD0F305A0D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BDFAC16-CDB6-40DF-BF55-ADD0F305A0D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BDFAC16-CDB6-40DF-BF55-ADD0F305A0D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD367E7-D3DB-4E9C-93D4-E815A8955137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD367E7-D3DB-4E9C-93D4-E815A8955137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD367E7-D3DB-4E9C-93D4-E815A8955137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD367E7-D3DB-4E9C-93D4-E815A8955137}.Release|Any CPU.Build.0 = Release|Any CPU
+		{753BE409-7268-48F1-BB45-D568EF1E5E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753BE409-7268-48F1-BB45-D568EF1E5E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753BE409-7268-48F1-BB45-D568EF1E5E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753BE409-7268-48F1-BB45-D568EF1E5E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF88A1F-E638-4EDA-9BAC-E8A4A44A373B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF88A1F-E638-4EDA-9BAC-E8A4A44A373B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF88A1F-E638-4EDA-9BAC-E8A4A44A373B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF88A1F-E638-4EDA-9BAC-E8A4A44A373B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92912C38-0B74-4F4A-A54A-94DC70E7CB3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92912C38-0B74-4F4A-A54A-94DC70E7CB3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92912C38-0B74-4F4A-A54A-94DC70E7CB3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92912C38-0B74-4F4A-A54A-94DC70E7CB3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D767C87-21D2-40A3-BF83-BB58A62D8FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D767C87-21D2-40A3-BF83-BB58A62D8FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D767C87-21D2-40A3-BF83-BB58A62D8FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D767C87-21D2-40A3-BF83-BB58A62D8FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
